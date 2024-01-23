@@ -18,7 +18,7 @@ function HeroSection() {
     //   <Button className="">Learn More</Button>
     // </div>
     <div className="flex justify-center items-center flex-col md:flex-row text-center md:text-left w-full my-24 md:my-32 px-8 md:px-32">
-      <div className="">
+      <div className="order-2 md:order-1 mt-10 md:mt-0">
         <h2 className="text-[40px] md:text-[56px] dark:text-white capitalize leading-[46px] md:leading-[64px] font-bold">
           Fix your
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#0CC8E8] to-[#2DEEAA]">
@@ -261,7 +261,10 @@ function HeroSection() {
           </a>
         </div>
       </div>
-      <img className="w-full max-h-[400px]" src={PhoneMockup} />
+      <img
+        className="w-full max-h-[400px] order-1 md:order-2"
+        src={PhoneMockup}
+      />
     </div>
   );
 }
