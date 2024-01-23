@@ -8,6 +8,7 @@ import FAQSection from "./sections/FAQ";
 import Footer from "./components/Footer";
 import FeaturesCardSection from "./sections/FeaturesCards";
 import FeaturesSection from "./sections/Features";
+import DownloadAppSection from "./sections/DownloadApp";
 
 function App() {
   return (
@@ -20,10 +21,11 @@ function App() {
       <FeaturesCardSection />
       <FeaturesSection />
       <AboutSection />
-      <ProductsSection />
-      <NewsSection />
-      <DirectorsSection />
-      <FAQSection />
+      {/* <ProductsSection /> */}
+      {/* <NewsSection /> */}
+      {/* <DirectorsSection /> */}
+      {/* <FAQSection /> */}
+      <DownloadAppSection />
       <Footer />
     </div>
   );

@@ -1,10 +1,10 @@
-import DarkLogo from "../Assets/LogoDark";
+import DarkLogo from "../Assets/logo-footer.svg";
 
 function Footer() {
   return (
     <footer className="text-gray-400 bg-black body-font mt-10 md:mt-32 flex flex-col items-center">
       <div className="pt-10">
-        <DarkLogo />
+        <img src={DarkLogo} />
       </div>
 
       <div className="container px-10 md:px-32 py-16 mx-auto">
@@ -45,7 +45,7 @@ function Footer() {
       <div className=" w-full h-px max-w-5xl mx-auto my-1 bg-[#262626]"></div>
 
       <p className="text-gray-400 text-sm text-center sm:text-left md:text-center px-10 md:px-32 py-5">
-        Copyright ©2024 victoriam AI - All rights reserved
+        Copyright ©2024 Izzy AI - All rights reserved
       </p>
     </footer>
   );
