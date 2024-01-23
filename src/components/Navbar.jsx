@@ -197,13 +197,16 @@ function Navbar() {
         </a>
 
         <div className="relative w-full text-black dark:text-white">
-          <button
+          {/* <button
             onClick={() => setIsMobileDropdown(!isMobileDropdown)}
             className="flex items-center text-center  hover:text-teal-500 hover:shadow-lg px-6 py-3 mx-auto"
           >
             <span>Try Products</span>
             <ChevronDownIcon />
-          </button>
+          </button> */}
+          <div className="flex justify-center">
+            <TryProductsButton />
+          </div>
 
           {isMobileDropdown && (
             <div className="absolute h-full top-14 w-full shadow-md">
