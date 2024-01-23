@@ -1,8 +1,8 @@
 import { useState } from "react";
 import NavbarLogo from "../Assets/Logo";
 import Switcher from "./Switcher";
-import ChevronDownIcon from "../Assets/ChevronDown";
-import ChevronUpGradientIcon from "../Assets/ChevronUpGradient";
+// import ChevronDownIcon from "../Assets/ChevronDown";
+// import ChevronUpGradientIcon from "../Assets/ChevronUpGradient";
 
 const TealArrow = () => {
   return (
@@ -81,16 +81,16 @@ const links = [
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isMobileDropdown, setIsMobileDropdown] = useState(false);
+  // const [isMobileDropdown, setIsMobileDropdown] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggleDropdown = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
-  const closeDropdown = () => {
-    setIsOpen(false);
-  };
+  // const closeDropdown = () => {
+  //   setIsOpen(false);
+  // };
 
   const toogle = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -120,7 +120,7 @@ function Navbar() {
         </div>
         <div className="relative hidden md:flex md:items-center ">
           <Switcher />
-          <TryProductsButton open={isOpen} onClick={toggleDropdown} />
+          <TryProductsButton open={isOpen} />
           {isOpen && (
             <div className="absolute w-[225px] h-full top-14 -left-10 dark:text-white">
               <a
@@ -208,7 +208,7 @@ function Navbar() {
             <TryProductsButton />
           </div>
 
-          {isMobileDropdown && (
+          {/* {isMobileDropdown && (
             <div className="absolute h-full top-14 w-full shadow-md">
               <a
                 href="#"
@@ -225,7 +225,7 @@ function Navbar() {
                 <TealArrow />
               </a>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </>
